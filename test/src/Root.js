@@ -5,7 +5,7 @@ import reducers from './reducers/index';
 
 export default(props) => {
   return (
-    <Provider store={createStore(reducers), {}}>
+    <Provider store={createStore(reducers, {})} >
       {props.children}
     </Provider>
   )
