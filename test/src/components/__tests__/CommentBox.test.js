@@ -17,14 +17,14 @@ afterEach(() => {
   wrapped.unmount();
 })
 
-it('has text area and a button', () => {
+it('has text area and two buttons', () => {
   expect(wrapped.find('textarea')
                 .length)
                 .toEqual(1)
 
   expect(wrapped.find('button')
                 .length)
-                .toEqual(1)
+                .toEqual(2)
 })
 
 describe('the text area', () => {
